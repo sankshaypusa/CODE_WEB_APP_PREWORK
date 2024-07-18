@@ -4,7 +4,7 @@ Submitted by: **👉🏿 SANKSHAY PUSA**
 
 About this web app: **👉🏿 This application is a content management system designed for content creators. It allows users to add, view, edit, and delete content creators, such as Twitch streamers, YouTube channels, Instagram personalities, TikTok accounts, or Mastodon microbloggers. The application is built using React and integrates with Supabase for data storage and retrieval. **
 
-Time spent: **👉🏿 360 ** hours
+Time spent: **👉🏿 90 ** hours
 
 ## Required Features
 
