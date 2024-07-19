@@ -35,7 +35,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-👉🏿<img src='file:///Users/sankshay/Documents/FINAL_SUBMISSION_GIF_4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+👉🏿<img src='https://github.com/sankshaypusa/user-create-app/blob/master/FINAL_SUBMISSION_GIF_4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  👉🏿 LICEAPP
