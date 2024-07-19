@@ -1,25 +1,22 @@
-// src/components/ViewCreator.jsx
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const ViewCreator = ({ creator, onBack }) => {
-  if (!creator) {
-    return <p>Creator not found</p>;
-  }
-
   return (
-    <div className="creator-item">
-      <img src={creator.image} alt={creator.name} />
+    <div>
       <h2>{creator.name}</h2>
+      <img src={creator.image} alt={creator.name} />
       <p>{creator.description}</p>
-      <p>URL: {creator.url}</p>
       <div className="social-icons">
         <a href={creator.instagram} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faInstagram} /> Instagram
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
         <a href={creator.twitter} target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faTwitter} /> Twitter
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
+        <a href={creator.youtube} target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faYoutube} />
         </a>
       </div>
       <button onClick={onBack}>Back</button>

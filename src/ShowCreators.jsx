@@ -1,7 +1,6 @@
-// src/ShowCreators.jsx
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const ShowCreators = ({ creators, onEdit, onView, onDelete }) => {
   return (
@@ -19,6 +18,9 @@ const ShowCreators = ({ creators, onEdit, onView, onDelete }) => {
               </a>
               <a href={creator.twitter} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a href={creator.youtube} target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faYoutube} />
               </a>
             </div>
             <button onClick={() => onView(index)}>View Profile</button>

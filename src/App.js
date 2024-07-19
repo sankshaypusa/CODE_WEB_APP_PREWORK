@@ -1,5 +1,4 @@
-// src/App.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ShowCreators from './ShowCreators';
 import ViewCreator from './ViewCreator';
 import EditCreator from './EditCreator';
@@ -11,6 +10,15 @@ const App = () => {
   const [creators, setCreators] = useState([]);
   const [currentView, setCurrentView] = useState('main');
   const [selectedCreatorIndex, setSelectedCreatorIndex] = useState(null);
+
+  useEffect(() => {
+    const storedCreators = JSON.parse(localStorage.getItem('creators') || '[]');
+    setCreators(storedCreators);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('creators', JSON.stringify(creators));
+  }, [creators]);
 
   const addCreator = (creator) => {
     setCreators([...creators, creator]);
